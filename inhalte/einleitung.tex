@@ -1,0 +1,50 @@
+% Einleitungs Sektion
+\section{Einleitung}
+
+\subsection{Geschichte}
+1977 entwickelte \textit{Donald E. Knuth} das Textverarbeitungssystem TeX (griechisch texum). \textit{Leslie Lamport} erweiterte TeX mit mehr Abstraktion, starker Vereinfachung und einem spezifischeren Befehlssatz zu LaTeX. Ursprünglich als Darstellungswerkzeug mathematischer Formeln gedacht wurde es schnell auch von zahlreichen Autoren zum einheitlichen Layouten ihrer Werke genutzt.
+Darauf aufbauend werden bis heute zahlreiche LaTeX Erweiterungen entwickelt und der Einsatz in Wissenschaft und des Schreibens ist unabdingbar.
+\footnote{Aus \url{https://www.selflinux.org/selflinux/html/latex_geschichte01.html}}
+
+\subsection{Wofür ist \LaTeX geeignet?}
+Gut geeignet ist \LaTeX aufgrund des einheitlichen hochkonfigurierbaren Layouting,  mathematischen Werkzeuge, Mehrsprachigkeit und Bibliographieerstellung für Schriftstücke mit logischem Aufbau wie z.B. Naturwissenschaftliche Arbeiten, Geisteswissenschaftliche Arbeiten, Artikel, Abschlussarbeiten, sowie Bücher und simple Präsentationen.
+
+\textbf{Nicht} geeignet ist \LaTeX für Dokumente mit wenig Struktur, Präsentationen (bunt, drehend, blinkend, Animationen), Plakate, Dokumente mit vielen uneinheitlichen Bildern.
+
+\subsection{Wie funktioniert \TeX?}
+
+\subsubsection{What You See Is What You Get}
+Bei klassischen Texteditoren wie Word schreibt und sieht man genau das was man will und bekommt. Formatierung und Positionierung passiert dabei im Hintergrund automatisch und sieht der User bereits verarbeitet.
+Das erleichtert das Schreiben, erschwert jedoch auch das Layouting von großen Dokumenten, da die Eigenschaften intransparent sind.
+
+\subsubsection{What You See Is What You Mean}
+Dem \textit{WYSIWYG} steht das \textit{What You See Is What You Mean (WYSIWYM)} entgegen. Dabei wird grundsätzlich zwischen den Textdateien und dem verarbeiteten Ergebnis unterschieden. Die Textdateien sind jedoch mit der zugrunde liegenden Sprache \LaTeX geschrieben (vergleichbar mit einer Programmiersprache). Diese Sprache abstrahiert Layout, Text und sonstige Medien und bringt diese in eine logische Struktur.
+
+\subsubsection{Kompilieren einer \LaTeX Datei}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{bilder/latex-compiler.jpg}
+    \caption{Wie Tex Dokumente kompiliert werden}
+    \label{fig.kompiler}
+\end{figure}
+
+Diese Sprache und Struktur muss zur gegebenen Zeit verarbeitet und zusammengelegt bzw. \textit{kompiliert} werden, um daraus das gewünschte Resultat, zu generieren. Wie in illustriert sind mehrere Programme zum Kompilieren eines Tex Dokuments notwendig.
+Diese Programme setzen sich aus der generellen \TeX Engine und weiteren Makropaketen zusammen die wiederum unterschiedliche Formatierungen reinbringen.
+Distributionen sind dabei unterschiedliche Weiterentwicklungen in unterschiedliche Richtungen und Systeme, die aber alle auf der selben Basis aufbauen. In der Regel bringt eine Distribution alle typischen Packete mit die man brauchen wird.
+\footnote{Weitere Distributionen und Programme: \url{http://www.tug.org/interest.html}}
+
+
+\subsection{Das erste Dokument}
+Im Folgenden verwenden wir \textit{texlive} als Distribution und \textit{xelatex} als Compiler.
+Als Editor ist TextStudiu zu empfehlen. Alternativ kann man auch VS Code mit der Extension \textit{LaTeX Workshop} verwenden.
+
+Beim Erstellen der ersten Datei darauf achten, dass alle Tex Dateien auf \textbf{\textit{.tex}} müssen enden.
+
+\begin{verbatim}
+    \documentclass{minimal}
+    \begin{document}
+    Hallo Welt!
+    \end{document}
+\end{verbatim}
+
+\newpage

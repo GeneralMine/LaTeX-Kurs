@@ -1,31 +1,29 @@
-\documentclass{scrartcl} % bessere form als article
+\documentclass[titlepage=true]{scrartcl} % bessere form als article
 
-\usepackage{blindtext}
+\input{header}
 
-\usepackage{polyglossia} % Sprachen
-\setmainlanguage[babelshorthands=true]{german}
-
-\usepackage{enumitem} % Für eigene Symbole in Aufzählungen
-
-\usepackage{mathtools}
-\usepackage{amsmath} % Für 
+\title{\LaTeX Kurs}
+\subtitle{Eine Einführung}
+\author{\textit{Marvin Raiser}}
+\date{\today}
 
 \begin{document}
+
+\maketitle
 
 \tableofcontents
 \newpage
 
+\input{inhalte/einleitung}
 
-\input{sections/einleitung.tex}
+\input{inhalte/dokumenteinstellungen.tex}
 
-\input{sections/einfache_befehle.tex}
+\input{inhalte/dokumentstruktur.tex}
 
-\input{sections/listen.tex}
+\input{inhalte/text_eigenschaften.tex}
 
-\input{sections/mathe.tex}
+\input{inhalte/abbildungen}
 
-\input{sections/abbildungen.tex}
-
-\input{sections/tabellen.tex}
+\input{inhalte/tabellen}
 
 \end{document}
