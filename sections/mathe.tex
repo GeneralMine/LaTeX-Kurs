@@ -1,0 +1,49 @@
+% Umgebungen und Mathe Sektion
+\section{Mathe}
+
+Im \textit{inline} Mathematik-Modus definieren wir die Masse $m$, Energie $E$ sowie die Lichtgeschwindigkeit \(c\), die wir anschließend im \textit{display} Mathematik-Modus einer Formel verwenden
+
+\[
+    E=mc^2
+\]
+
+Auch Variablen und griechische Symbole sind möglich
+\[
+    \alpha = \theta \cdot \gamma
+\]
+
+Brüche können mit \textit{frac} beschrieben werden
+\[
+    \alpha = \frac{\beta\cdot\alpha}{\Gamma}
+\]
+
+Im Gegensatz zum einfachen \textit{display} Mathematik-Modus sind Gleichungen in der \textit{equation} Umgebung nummeriert.
+
+\begin{equation}
+    \int_{0}^{\infty} f(x)\,\mathrm{d}x
+\end{equation}
+
+Mit \textit{align} kann man Formeln schön untereinander alignen.
+
+\begin{align}
+    a     & = b + c \\
+    c + d & = e + f
+\end{align}
+
+
+
+\subsection{Maxwellgleichung}
+
+In cgs-Einheiten und differentieller Form lauten die vier Maxwellgleichungen:
+
+\begin{align}
+    \nabla \cdot \vec{E}  & = 4\pi \rho                                     & \text{Gaußsches Gesetz}                        \\
+    \nabla \cdot \vec{B}  & = 0                                             &                                                \\
+    \nabla \times \vec{E} & = -\partial_{ct} \vec{B}                        & \text{Faradaysches Induktionsgesetz}           \\
+    \nabla \times \vec{B} & = \frac{4\pi}{c}\vec{j} + \partial_{ct} \vec{E} & \text{Ampêre-Maxwellsches Durchflutungsgesetz}
+\end{align}
+
+
+
+
+\newpage

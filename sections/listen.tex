@@ -1,0 +1,57 @@
+\section{Listen}
+
+\subsection{Auflistungen}
+\begin{itemize}
+    \item Apfel
+    \item Birne
+\end{itemize}
+
+\subsection{Auflistungen verschachtelt}
+\begin{itemize}
+    \item Obst
+          \begin{itemize}
+              \item Apfel
+              \item Birne
+          \end{itemize}
+    \item Gemüse
+\end{itemize}
+
+
+\subsection{Auflistungen mit andere Zeichen}
+\begin{itemize}
+    \item Apfel
+    \item[--] Birne
+    \item Erdbeere
+\end{itemize}
+
+\subsection{Auflistungen immer mit anderen Zeichen}
+\begin{itemize}
+    \renewcommand\labelitemi{--}
+    \item Apfel
+    \item Birne
+\end{itemize}
+
+\subsection{Aufzählungen}
+\begin{enumerate}
+    \item Apfel
+    \item Birne
+\end{enumerate}
+
+\subsection{Aufzählungen verschachtelt}
+\begin{enumerate}
+    \item Obst
+          \begin{enumerate}
+              \item Apfel
+              \item Birne
+          \end{enumerate}
+    \item Gemüse
+\end{enumerate}
+
+\subsection{Aufzählungen mit enumitem packet}
+\begin{enumerate}[label=(\alph*)]
+    \item Apfel
+    \item Birne
+    \item Banane
+\end{enumerate}
+
+\newpage
