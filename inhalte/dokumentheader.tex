@@ -1,10 +1,39 @@
 \section{Dokumentheader}
+Im \textit{Header} werden einmalig globale Einstellungen getroffen, um unteranderem einheitliches Design zu garantieren oder Packete zu konfigurieren.
+Eingeleitet wird der \textit{Header} durch \textit{documentclass} und geschlossen durch \textit{begin(document)}
 
 \subsection{Dokumentklassen}
-
+Dokumentklassen legen erste allgemeine Layoutregeln fest wie beispielsweise Ränder, Abstände, Schriftgrößen etc.
 \subsubsection{Typische Klassen}
+Die typischen Klassen nach Relevanz und Häufigkeit sortiert. Meist wird \textit{article} verwendet.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{rl}
+        article & (Kurze) Artikel          \\
+        report  & Reporte, Tagungsberichte \\
+        book    & Bücher                   \\
+        letter  & Briefe                   \\
+        minimal & Minimalbeispiele         \\
+        beamer  & Präsentationen
+    \end{tabular}
+    \caption{Die typischen Dokumentklassen}
+    \label{typischeDokumentKlassen}
+\end{table}
 
 \subsubsection{KOMA-Klassen}
+KOMA-Klassen sind moderne Erweiterungen der typischen Klassen. Sie modernisieren nicht nur das Layout und Design, sondern erlauben es einfach KOMA-Skripte zunutzen, wodurch mehr Funktionalität und Packete unterstützt wird.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{rl}
+        scrartcl & Erweiterung von article   \\
+        scrreprt & Erweiterung von report    \\
+        scrbook  & Erweiterung von book      \\
+        scrlttr2 & Sehr mächtige Briefklasse \\
+    \end{tabular}
+    \caption{Zusätzliche KOMA-Klassen}
+    \label{KOMAKlassen}
+\end{table}
 
 \subsubsection{Wichtige \texttt{documentclass} Optionen}
 
