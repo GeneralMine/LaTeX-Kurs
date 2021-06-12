@@ -1,4 +1,3 @@
-% Einleitungs Sektion
 \section{Einleitung}
 
 \subsection{Geschichte}
@@ -21,7 +20,7 @@ Das erleichtert das Schreiben, erschwert jedoch auch das Layouting von großen D
 Dem \textit{WYSIWYG} steht das \textit{What You See Is What You Mean (WYSIWYM)} entgegen. Dabei wird grundsätzlich zwischen den Textdateien und dem verarbeiteten Ergebnis unterschieden. Die Textdateien sind jedoch mit der zugrunde liegenden Sprache \LaTeX geschrieben (vergleichbar mit einer Programmiersprache). Diese Sprache abstrahiert Layout, Text und sonstige Medien und bringt diese in eine logische Struktur.
 
 \subsubsection{Kompilieren einer \LaTeX Datei}
-\begin{figure}[h]
+\begin{figure}
     \centering
     \includegraphics[scale=0.5]{bilder/latex-compiler.jpg}
     \caption{Wie Tex Dokumente kompiliert werden}
@@ -33,18 +32,32 @@ Diese Programme setzen sich aus der generellen \TeX Engine und weiteren Makropak
 Distributionen sind dabei unterschiedliche Weiterentwicklungen in unterschiedliche Richtungen und Systeme, die aber alle auf der selben Basis aufbauen. In der Regel bringt eine Distribution alle typischen Packete mit die man brauchen wird.
 \footnote{Weitere Distributionen und Programme: \url{http://www.tug.org/interest.html}}
 
+\subsection{TeX-Struktur}
+Ein Tex Projekt ist stets zwei geteilt.
+Ein \textit{Header} definiert den Dokumenttypen, setzt Einstellungen zum Layout und konfiguriert die Packete die man braucht.
+Im \textit{Body} oder auch \textit{document} befindet sich dann der gesamte Inhalt des Dokumentes.
+Der \textit{Header} wird einmalig am Anfang des Projekts gesetzt, damit das Layout und die wichtigen Einstellungen getroffen sind, bevor man sich im Anschluss auf den Inhalt fokussiert. Die Arbeit konzentriert sich daher stark auf den eigentlichen Inhalt im \textit{document}.
 
 \subsection{Das erste Dokument}
 Im Folgenden verwenden wir \textit{texlive} als Distribution und \textit{xelatex} als Compiler.
 Als Editor ist TextStudiu zu empfehlen. Alternativ kann man auch VS Code mit der Extension \textit{LaTeX Workshop} verwenden.
 
-Beim Erstellen der ersten Datei darauf achten, dass alle Tex Dateien auf \textbf{\textit{.tex}} müssen enden.
+\begin{samepage}
 
-\begin{verbatim}
-    \documentclass{minimal}
-    \begin{document}
-    Hallo Welt!
-    \end{document}
-\end{verbatim}
+    Beim Erstellen der ersten Datei darauf achten, dass alle Tex Dateien auf \textbf{\textit{.tex}} enden.
+
+    \begin{verbatim}
+        \documentclass{minimal}
+        \begin{document}
+        Hallo Welt!
+        \end{document}
+    \end{verbatim}
+
+    Der \textit{Header} definiert hier eine \textit{documentclass} und setzt diese auf \textit{minimal}, dazu später mehr. \\
+    Leicht zu erkennen leitet \textit{begin} die \textit{document} Umgebung, unseren \textit{Body} ein. Nachdem dort der Text \textit{Hallo Welt!} gedruckt wird, schließt sich das \textit{document} auch wieder.
+
+    Super! Das erste minimale Dokument steht und ist einsatzbereit!
+
+\end{samepage}
 
 \newpage
